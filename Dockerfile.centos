@@ -1,4 +1,4 @@
-FROM ubuntu:14.10
-RUN sudo apt-get update
+FROM centos:7
+RUN yum update
 COPY hello-image.txt /hello-image.txt
 CMD ["/bin/bash"]
